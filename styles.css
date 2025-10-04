@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Encourage raster scaling for a pixel-art look on tiny SVG icons */
+.leaflet-marker-icon,
+.legend-swatch {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.legend {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  font: 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+}
+
+.legend h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.legend .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.legend img.legend-swatch {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.legend .line-swatch {
+  width: 18px;
+  height: 0;
+  border-top: 3px solid #3498db;
+  display: inline-block;
+}
+
+.legend .line-swatch.hike {
+  border-top: 3px dashed #2ecc71;
+}
+
